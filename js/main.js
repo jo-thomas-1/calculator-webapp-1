@@ -1,3 +1,6 @@
-// main javascript file
+/* main javascript file */
 
-console.log("hello");
+function value_input(key)
+{
+	document.getElementById("screen").innerHTML = key;
+}
