@@ -28,3 +28,9 @@ function equals()
 	// result output
 	document.getElementById("screen").innerHTML = result;
 }
+
+// clear screen
+function clear_screen()
+{
+	document.getElementById("screen").innerHTML = "";
+}
