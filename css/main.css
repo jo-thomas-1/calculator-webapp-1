@@ -1,0 +1,61 @@
+/* main css file */
+
+/*
+	Colors
+
+	- background: #fed233;
+	- text: #ffffff;
+	- content background: #313131;
+	- content background light: #595959;
+	- button type 1: #4b4b4b;
+	- button type 2: #fac200;
+	- button type 2 light: #ffcd1a;
+*/
+
+body {
+	background-color: #fed233;
+	color: #ffffff;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+table {
+	background-color: #313131;
+	border-collapse: separate;
+	border-spacing: 0.5em;
+	border-radius: 10px;
+	padding: 0.5em;
+	padding-top: 1em;
+}
+
+td {
+	background-color: #4b4b4b;
+	text-align: center;
+	padding: 1em;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+td:hover {
+	background-color: #595959;
+}
+
+#screen {
+	text-align: right;
+	padding: 0.6em;
+	font-size: 26px;
+	cursor: default;
+}
+
+#screen:hover {
+	background-color: #4b4b4b;
+}
+
+#clear {
+	background-color: #fac200;
+	color: #313131;
+}
+
+#clear:hover {
+	background-color: #ffcd1a;
+}
