@@ -15,3 +15,16 @@ function operator_input(key)
 	document.getElementById("screen").innerHTML = "";
 	operator = key;
 }
+
+// function for equals '=' button
+function equals()
+{
+	value_2 = parseInt(document.getElementById("screen").innerHTML);
+	document.getElementById("screen").innerHTML = "";
+
+	// calculation ------------------------------------------------------
+	let result = value_1 + value_2;
+
+	// result output
+	document.getElementById("screen").innerHTML = result;
+}
