@@ -26,6 +26,9 @@ table {
 	border-radius: 10px;
 	padding: 0.5em;
 	padding-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20vh;
 }
 
 td {
