@@ -8,6 +8,14 @@ function clear_screen()
 	document.getElementById("screen").innerHTML = "";
 }
 
+// functions for '<' button
+function back()
+{
+	let screen = document.getElementById("screen");
+
+	screen.innerHTML = screen.innerHTML.slice(0, screen.innerHTML.length - 1);
+}
+
 // input value function for 0 to 9 and '.'
 function value_input(key)
 {
