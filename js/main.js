@@ -29,7 +29,35 @@ function equals()
 	clear_screen();
 
 	// calculation ------------------------------------------------------
-	let result = value_1 + value_2;
+	let result = 0;
+
+	console.log(value_1);
+	console.log(operator);
+	console.log(value_2);
+
+	switch(operator)
+	{
+		case '+':
+			result = value_1 + value_2;
+		break;
+
+		case '-':
+			result = value_1 - value_2;
+		break;
+
+		case '/':
+			result = value_1 / value_2;
+		break;
+
+		case 'x':
+			result = value_1 * value_2;
+		break;
+
+		default:
+			console.log("Invalid Operator");
+	}
+
+	console.log(result);
 
 	// result output
 	document.getElementById("screen").innerHTML = result;
