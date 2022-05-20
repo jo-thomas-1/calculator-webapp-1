@@ -62,3 +62,22 @@ function equals()
 	// result output
 	document.getElementById("screen").innerHTML = result;
 }
+
+// functions for '%' button
+function percentage()
+{
+	value_2 = parseInt(document.getElementById("screen").innerHTML);
+	clear_screen();
+
+	console.log(value_1);
+	console.log("%");
+	console.log(value_2);
+
+	// calculation ------------------------------------------------------
+	let result = value_1 * (value_2 / 100);
+
+	console.log(result);
+
+	// result output
+	document.getElementById("screen").innerHTML = result;
+}
