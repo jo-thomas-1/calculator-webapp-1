@@ -19,7 +19,15 @@ function back()
 // read number from screen
 function read_value()
 {
-	return parseFloat(document.getElementById("screen"));
+	return parseFloat(document.getElementById("screen").innerHTML);
+}
+
+// add to history box
+function add_to_history(data)
+{
+	let box = document.getElementById("history");
+
+	box.innerHTML = box.innerHTML + "<li>" + data + "</li>";
 }
 
 // input value function for 0 to 9 and '.'
@@ -46,10 +54,6 @@ function equals()
 	// calculation ------------------------------------------------------
 	let result = 0;
 
-	console.log(value_1);
-	console.log(operator);
-	console.log(value_2);
-
 	switch(operator)
 	{
 		case '+':
@@ -72,7 +76,7 @@ function equals()
 			console.log("Invalid Operator");
 	}
 
-	console.log(result);
+	add_to_history(value_1 + " " + operator + " " + value_2 + " = " + result);
 
 	// result output
 	document.getElementById("screen").innerHTML = result;
@@ -84,14 +88,10 @@ function percentage()
 	value_2 = read_value();
 	clear_screen();
 
-	console.log(value_1);
-	console.log("%");
-	console.log(value_2);
-
 	// calculation ------------------------------------------------------
 	let result = value_1 * (value_2 / 100);
 
-	console.log(result);
+	add_to_history(value_1 + " " + operator + " " + value_2 + "% = " + result);
 
 	// result output
 	document.getElementById("screen").innerHTML = result;

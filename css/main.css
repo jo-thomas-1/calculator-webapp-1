@@ -26,8 +26,6 @@ table {
 	border-radius: 10px;
 	padding: 0.5em;
 	padding-top: 1em;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 20vh;
 }
 
@@ -61,4 +59,44 @@ td:hover {
 
 #clear:hover {
 	background-color: #ffcd1a;
+}
+
+#history_container {
+	background-color: #313131;
+	padding: 0.5em;
+	padding-top: 1em;
+	border-radius: 10px;
+	width: 20em;
+	display: inline-grid;
+}
+
+#calc_container {
+	display: inline-grid;
+	margin-right: 1em;
+}
+
+#main {
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+}
+
+.heading {
+	text-align: center;
+	border-bottom: 2px solid #ffffff;
+	padding-bottom: 0.5em;
+	margin-bottom: 6px;
+}
+
+#history {
+	list-style-type: none;
+	text-align: center;
+	padding: 0px;
+	font-weight: 500;
+	max-height: 15em;
+	overflow-y: scroll;
+}
+
+#history li {
+	margin-bottom: 6px;
 }

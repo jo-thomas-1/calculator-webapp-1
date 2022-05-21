@@ -8,41 +8,51 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
-		<table>
-			<tr>
-				<td id="screen" colspan="4" align="right" height="36px"></td>
-			</tr>
-			<tr></tr>
-			<tr>
-				<td id="clear" onclick="clear_screen();">C</td>
-				<td onclick="back();"><</td>
-				<td onclick="percentage();">%</td>
-				<td onclick="operator_input(this.innerHTML);">/</td>
-			</tr>
-			<tr>
-				<td onclick="value_input(this.innerHTML);">7</td>
-				<td onclick="value_input(this.innerHTML);">8</td>
-				<td onclick="value_input(this.innerHTML);">9</td>
-				<td onclick="operator_input(this.innerHTML);">x</td>
-			</tr>
-			<tr>
-				<td onclick="value_input(this.innerHTML);">4</td>
-				<td onclick="value_input(this.innerHTML);">5</td>
-				<td onclick="value_input(this.innerHTML);">6</td>
-				<td onclick="operator_input(this.innerHTML);">-</td>
-			</tr>
-			<tr>
-				<td onclick="value_input(this.innerHTML);">1</td>
-				<td onclick="value_input(this.innerHTML);">2</td>
-				<td onclick="value_input(this.innerHTML);">3</td>
-				<td onclick="operator_input(this.innerHTML);">+</td>
-			</tr>
-			<tr>
-				<td colspan="2" onclick="value_input(this.innerHTML);">0</td>
-				<td onclick="value_input(this.innerHTML);">.</td>
-				<td onclick="equals();">=</td>
-			</tr>
-		</table>
+		<div id="main">
+			<div id="calc_container">
+				<table id="calculator">
+					<tr>
+						<td id="screen" colspan="4" align="right" height="36px"></td>
+					</tr>
+					<tr></tr>
+					<tr>
+						<td id="clear" onclick="clear_screen();">C</td>
+						<td onclick="back();"><</td>
+						<td onclick="percentage();">%</td>
+						<td onclick="operator_input(this.innerHTML);">/</td>
+					</tr>
+					<tr>
+						<td onclick="value_input(this.innerHTML);">7</td>
+						<td onclick="value_input(this.innerHTML);">8</td>
+						<td onclick="value_input(this.innerHTML);">9</td>
+						<td onclick="operator_input(this.innerHTML);">x</td>
+					</tr>
+					<tr>
+						<td onclick="value_input(this.innerHTML);">4</td>
+						<td onclick="value_input(this.innerHTML);">5</td>
+						<td onclick="value_input(this.innerHTML);">6</td>
+						<td onclick="operator_input(this.innerHTML);">-</td>
+					</tr>
+					<tr>
+						<td onclick="value_input(this.innerHTML);">1</td>
+						<td onclick="value_input(this.innerHTML);">2</td>
+						<td onclick="value_input(this.innerHTML);">3</td>
+						<td onclick="operator_input(this.innerHTML);">+</td>
+					</tr>
+					<tr>
+						<td colspan="2" onclick="value_input(this.innerHTML);">0</td>
+						<td onclick="value_input(this.innerHTML);">.</td>
+						<td onclick="equals();">=</td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="history_container">
+				<h3 class="heading">History</h3>
+				<ul id="history">
+				</ul>
+			</div>
+		</div>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
