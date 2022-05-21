@@ -16,6 +16,12 @@ function back()
 	screen.innerHTML = screen.innerHTML.slice(0, screen.innerHTML.length - 1);
 }
 
+// read number from screen
+function read_value()
+{
+	return parseFloat(document.getElementById("screen"));
+}
+
 // input value function for 0 to 9 and '.'
 function value_input(key)
 {
@@ -25,7 +31,8 @@ function value_input(key)
 // function for operator buttons
 function operator_input(key)
 {
-	value_1 = parseInt(document.getElementById("screen").innerHTML);
+	value_1 = read_value();
+
 	clear_screen();
 	operator = key;
 }
@@ -33,7 +40,7 @@ function operator_input(key)
 // function for equals '=' button
 function equals()
 {
-	value_2 = parseInt(document.getElementById("screen").innerHTML);
+	value_2 = read_value();
 	clear_screen();
 
 	// calculation ------------------------------------------------------
@@ -74,7 +81,7 @@ function equals()
 // functions for '%' button
 function percentage()
 {
-	value_2 = parseInt(document.getElementById("screen").innerHTML);
+	value_2 = read_value();
 	clear_screen();
 
 	console.log(value_1);
