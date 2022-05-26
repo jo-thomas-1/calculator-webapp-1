@@ -1,7 +1,9 @@
 # Calculator Application
 A simple calculator application using HTML, CSS and JavaScript
 
-Repository link: https://github.com/jothomas1996/calculator-app-1
+GitHub Repository link: https://github.com/jothomas1996/calculator-app-1
+
+CodePen View: https://codepen.io/jothomas/full/PoQOvNd
 
 ## Color Palette
 
