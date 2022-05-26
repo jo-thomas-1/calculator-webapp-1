@@ -94,7 +94,7 @@ td:hover {
 	padding: 0px;
 	font-weight: 500;
 	max-height: 15em;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 #history li {
